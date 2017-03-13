@@ -1,0 +1,448 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("../fonts/NunitoSans-Regular.ttf?1481095800") format("truetype");
+}
+html, body {
+  height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+header {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 999;
+  min-width: 100%;
+}
+header .navbar {
+  margin-bottom: 0px;
+  background: #fff;
+  padding: 45px 0.9375rem 45px 0.9375rem;
+  transition: all 0.5s ease 0.1s;
+  border-radius: 0px;
+}
+header .padding-on-my-header {
+  padding: 17px 0.9375rem 35px 0.9375rem;
+}
+header .navbar-toggle .icon-bar {
+  background-color: #19ecff;
+}
+header .navbar-brand {
+  padding: 0px 15px;
+}
+header .navbar-brand img {
+  width: 50%;
+  transition: all 0.5s ease 0.1s;
+}
+header .nav li a {
+  color: #333;
+  border-top: 1px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.2s ease 0.10s;
+}
+header .nav li a:hover {
+  border-top: 1px solid #19ecff;
+  box-shadow: none;
+  background-color: transparent;
+  color: #19ecff;
+}
+header .navbar-right {
+  margin-top: 1.85em;
+}
+
+@media screen and (max-width: 400px) {
+  header .container-fluid {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .navbar {
+    padding: 10px 0.9375rem 15px 0.9375rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .padding-on-my-header {
+    padding: 10px 0.9375rem 15px 0.9375rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .navbar-brand {
+    padding-right: 0px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .navbar-brand img {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav li {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav li a:hover {
+    border-top: 1px solid transparent;
+  }
+}
+.header-fill {
+  background: #fff;
+  height: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-fill {
+    height: 40px;
+  }
+}
+footer {
+  min-height: 140px;
+}
+footer .deSpace-home-contact article {
+  max-width: 960px;
+  margin: 0em auto;
+  text-align: center;
+}
+footer .deSpace-home-contact article .list-inline li:nth-child(3) {
+  padding-right: 2em;
+}
+footer .deSpace-home-contact article .list-inline li:last-child a {
+  text-decoration: none;
+  color: #000;
+}
+footer section article .col-lg-12:nth-child(1) {
+  margin-top: 2em;
+}
+footer section article .col-lg-12:nth-child(2) {
+  margin-top: 3em;
+}
+
+.home {
+  /*---------------Overlay--------------*/
+}
+.home .deSpace-home-banner {
+  background: url("../images/despaceWebHome.jpg");
+  height: 500px;
+  padding-top: 6em;
+}
+.home .deSpace-home-banner article {
+  max-width: 960px;
+  margin: 5em auto;
+  color: #fff;
+  text-align: center;
+}
+.home .deSpace-home-about {
+  background: url("../images/despaceWebAboutUs.jpg");
+  height: 550px;
+}
+.home .deSpace-home-about .col-lg-12 {
+  margin-top: 3em;
+}
+.home .deSpace-home-about article {
+  max-width: 960px;
+  margin: 2em auto;
+  color: #fff;
+  text-align: justify;
+}
+.home .deSpace-home-about article:nth-child(2) {
+  margin-top: 1em;
+}
+.home .deSpace-home-about article h5 {
+  line-height: 1.75em;
+}
+.home .content {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.home .content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+.home .content:hover .content-overlay {
+  opacity: 1;
+}
+.home .content-image {
+  width: 100%;
+}
+.home .content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.home .content:hover .content-details {
+  top: 90%;
+  left: 50%;
+  opacity: 1;
+}
+.home .content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+.home .content-details p {
+  color: #fff;
+  font-size: 0.8em;
+}
+.home .fadeIn-top {
+  top: 20%;
+}
+.home .deSpace-home-work .col-lg-12 article {
+  max-width: 1000px;
+  margin: 1em auto;
+}
+.home .deSpace-home-work .col-lg-12 article div {
+  height: 350px;
+}
+.home .deSpace-home-work .col-lg-12 article div > section {
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.home .deSpace-home-work .col-lg-12 article div > section:hover {
+  -webkit-transition-delay: 0.1s;
+  -moz-transition-delay: 0.1s;
+  -ms-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+.home .deSpace-home-work .col-lg-12 article div.col-lg-6 {
+  padding: 2%;
+}
+.home .deSpace-home-work .col-lg-12 article .despaceWebExibition {
+  background: url("../images/despaceWebExibition.jpg");
+}
+.home .deSpace-home-work .col-lg-12 article .despaceWebPrint {
+  background: url("../images/despaceWebPrint.jpg");
+}
+.home .deSpace-home-work .col-lg-12 article .despaceWebPackaging {
+  background: url("../images/despaceWebPackaging.jpg");
+}
+.home .deSpace-home-work .col-lg-12 article .despaceWebLogos {
+  background: url("../images/despaceWebLogos.jpg");
+}
+.home .deSpace-home-work .col-lg-12 article .despaceWebCampaign {
+  background: url("../images/despaceWebCampaign.jpg");
+}
+.home .deSpace-home-work .col-lg-12 article .despaceWebBranding {
+  background: url("../images/despaceWebBranding.jpg");
+}
+.home .deSpace-home-contact article {
+  max-width: 960px;
+  margin: 0em auto;
+  text-align: center;
+}
+.home .deSpace-home-contact article .list-inline li:nth-child(3) {
+  padding-right: 2em;
+}
+.home .deSpace-home-contact article .list-inline li:last-child a {
+  text-decoration: none;
+  color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .home .deSpace-home-work .col-lg-12 article .col-lg-6 img {
+    height: 300px;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home .deSpace-home-work .col-lg-12 article .col-lg-6 img {
+    height: 275px;
+    width: 100%;
+  }
+}
+.brand section.container-fluid {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 5em;
+}
+.brand section.container-fluid article {
+  margin: 2em 0em;
+}
+.brand section.container-fluid article:nth-child(2) .col-lg-3 img, .brand section.container-fluid article:nth-child(3) .col-lg-3 img {
+  width: 100%;
+  margin: 2%;
+  padding: 5px;
+}
+
+/*---------------Chat----------------------*/
+button.chat {
+  position: fixed;
+  bottom: 10px;
+  width: 130px;
+  height: 45px;
+  right: 10px;
+  border: 1px solid mintcream;
+  outline: 0;
+  border-radius: 10px;
+  background-color: mediumseagreen;
+  color: #fff;
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+button.chat:hover {
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  -moz-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+#primaryWindow {
+  position: fixed;
+  bottom: -500px;
+  width: 300px;
+  right: 10px;
+  border: 1px solid mintcream;
+  outline: 0;
+  height: auto;
+  border-radius: 3px;
+  color: #fff;
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+#primaryWindow header {
+  background-color: mediumseagreen;
+}
+#primaryWindow .title {
+  background-color: mediumseagreen;
+}
+#primaryWindow .title div[attr^=col-lg] {
+  padding: 0px;
+}
+#primaryWindow .title div.col-lg-3 {
+  position: relative;
+}
+#primaryWindow .title div.col-lg-3 button {
+  height: 15px;
+  width: 15px;
+}
+#primaryWindow .title div.col-lg-3 button.closing {
+  background: url("../images/cancel.png");
+  background-repeat: no-repeat;
+  border: 0;
+  background-size: 10px;
+  position: absolute;
+  right: -13px;
+  top: 8px;
+}
+#primaryWindow .off-message small {
+  font-size: 12px;
+}
+#primaryWindow .off-message small:first-child {
+  color: #999;
+}
+#primaryWindow .off-message small:last-child {
+  color: #333;
+}
+#primaryWindow .form-fill label {
+  color: #888;
+  font-size: 12px;
+}
+#primaryWindow .form-fill button {
+  background-color: mediumseagreen;
+}
+
+#liveChatWindow {
+  position: fixed;
+  bottom: -500px;
+  width: 300px;
+  right: 10px;
+  border: 1px solid mintcream;
+  outline: 0;
+  border-radius: 3px;
+  color: #fff;
+  -moz-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+#liveChatWindow .live-Chat-body {
+  height: 300px;
+}
+#liveChatWindow .live-Chat-title {
+  background-color: mediumseagreen;
+  color: #fff;
+  padding: 5px 0;
+}
+#liveChatWindow .live-Chat-title .pull-right img {
+  width: 20px;
+  height: 20px;
+}
+#liveChatWindow .live-Chat-header {
+  margin: 4px 0px;
+  border-bottom: 1px solid #f2dede;
+  padding-bottom: 4px;
+  color: #444;
+}
+#liveChatWindow .live-Chat-header img {
+  height: 30px;
+  width: 30px;
+}
+#liveChatWindow .live-Chat-header small {
+  padding-left: 1em;
+}
+#liveChatWindow .live-Chat-header div.col-lg-12 {
+  padding-left: 5px;
+  padding-right: 5px;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>deSpace</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/library.css">
+    
+</head>
+
+<body>
+    <button class="chat" id="chatBox">
+        <strong>start chat</strong>
+    </button>
+    <div class="chatWindow" id="primaryWindow">
+        <div class="title col-lg-12">
+            <div class="col-lg-9  text-center clearfix">
+                <p class="">
+                    Live 24/5
+                </p>
+            </div>
+            <div class="col-lg-3">
+                <button class="closing" id="closePrim">
+                </button>
+            </div>
+        </div>
+        <div class="body clearfix">
+            <div class="col-lg-12 off-message">
+                <small>
+                    Sorry,we aren't online at the moment.Please leave a message and we'll get back to you soon.
+                </small><br>   
+                <small>
+                    <a href="#">Learn more about Premium plan</a>
+                </small>    
+            </div>
+            <div class="col-lg-12 form-fill">
+                <form>
+                    <div class="form-group">
+                        <label for="userName">Introduce yourself</label>
+                        <input type="email" class="form-control" id="userName" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="userEmail">Email address</label>
+                        <input type="email" class="form-control" id="userEmail" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="userMessage">Meaasge</label>
+                        <textarea id="userMessage" class="form-control" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" id="liveMove" class="btn  btn-lg btn-block btn-sm">send a message</button> 
+                    </div>
+                </form>    
+            </div>
+            
+        </div>
+    </div>
+    <div class="liveChat" id="liveChatWindow">
+        
+            <div class="live-Chat-title text-center clearfix">
+                <small><strong>LiveChat</strong></small>
+                <div class="pull-right">
+                    
+                </div>
+            </div>
+            <div class="live-Chat-header clearfix">
+                <div class="col-lg-12">
+                    <div class="pull-left">
+                    <img src="user.svg" alt="User Icon">
+                    </div>
+                    <small>Hi,<strong>User</strong></small><br>
+                    <small>Good Evening</small>
+
+                </div>
+            </div>
+                
+        <div class="col-lg-12 live-Chat-body clearfix">
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+</body>
+
+</html>

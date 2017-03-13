@@ -1,0 +1,180 @@
+header {
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  position: fixed;
+  z-index: 999;
+  min-width: 100%;
+}
+header .navbar {
+  margin-bottom: 0px;
+  background: #fff;
+  padding: 45px 0.9375rem 90px 0.9375rem;
+  transition: all 0.5s ease 0.1s;
+  border-radius: 0px;
+}
+header .padding-on-my-header {
+  padding: 17px 0.9375rem 50px 0.9375rem;
+}
+header .navbar-toggle .icon-bar {
+  background-color: #19ecff;
+}
+header .navbar-brand {
+  padding: 0px 15px;
+}
+header .navbar-brand img {
+  width: 50%;
+  transition: all 0.5s ease 0.1s;
+}
+header .nav li a {
+  color: #333;
+  border-top: 1px solid transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.2s ease 0.10s;
+}
+header .nav li a:hover {
+  border-top: 1px solid #19ecff;
+  box-shadow: none;
+  background-color: transparent;
+  color: #19ecff;
+}
+header .navbar-right {
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 400px) {
+  header .container-fluid {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .navbar {
+    padding: 10px 0.9375rem 15px 0.9375rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .padding-on-my-header {
+    padding: 10px 0.9375rem 15px 0.9375rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .navbar-brand {
+    padding-right: 0px;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .navbar-brand img {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav li {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .nav li a:hover {
+    border-top: 1px solid transparent;
+  }
+}
+.header-fill {
+  background: #fff;
+  height: 135px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-fill {
+    height: 40px;
+  }
+}
+.deSpace-home-banner {
+  background: url("../images/despaceWebHome.jpg");
+  height: 500px;
+  padding-top: 6em;
+}
+.deSpace-home-banner article {
+  max-width: 960px;
+  margin: 5em auto;
+  color: #fff;
+  text-align: center;
+}
+
+.deSpace-home-about {
+  background: url("../images/despaceWebAboutUs.jpg");
+  height: 550px;
+}
+.deSpace-home-about .col-lg-12 {
+  margin-top: 3em;
+}
+.deSpace-home-about article {
+  max-width: 960px;
+  margin: 2em auto;
+  color: #fff;
+  text-align: justify;
+}
+.deSpace-home-about article:nth-child(2) {
+  margin-top: 1em;
+}
+.deSpace-home-about article h5 {
+  line-height: 1.75em;
+}
+
+.deSpace-home-work .col-lg-12 article {
+  max-width: 1000px;
+  margin: 1em auto;
+}
+.deSpace-home-work .col-lg-12 article .col-lg-6 {
+  text-align: center;
+  margin: 1em 0em;
+}
+.deSpace-home-work .col-lg-12 article .col-lg-6 img {
+  width: 100%;
+  height: 400px;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+.deSpace-home-work .col-lg-12 article .col-lg-6 img:hover {
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 768px) {
+  .deSpace-home-work .col-lg-12 article .col-lg-6 img {
+    height: 300px;
+    width: 75%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .deSpace-home-work .col-lg-12 article .col-lg-6 img {
+    height: 275px;
+    width: 100%;
+  }
+}
+.deSpace-home-contact article {
+  max-width: 960px;
+  margin: 0em auto;
+  text-align: center;
+}
+.deSpace-home-contact article .list-inline li:nth-child(3) {
+  padding-right: 2em;
+}
+.deSpace-home-contact article .list-inline li:last-child a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer {
+  min-height: 140px;
+}
+footer section article .col-lg-12:nth-child(1) {
+  margin-top: 2em;
+}
+footer section article .col-lg-12:nth-child(2) {
+  margin-top: 3em;
+}
