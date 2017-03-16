@@ -2,6 +2,9 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/css3";
+
 @font-face {
   font-family: "Nunito Sans";
   src: url('../fonts/NunitoSans-Regular.ttf?1481095800') format("truetype");
@@ -168,11 +171,28 @@ footer {
       }
     }
   }
+  /*----------pintrest-----------*/
+  #demo {
+position: relative;
+max-width: 100%;
+width: 100%;
+}
+img {
+width: 100%;
+max-width: 100%;
+height: auto;
+}
+#listWrap ul { position: relative; }
+#listWrap li { color: #FFF; border: 1px solid #FFF; }
+#listWrap li h2 { margin-bottom: 15px; font-size: 1.3em; font-weight: bold; text-transform: uppercase; }
+#listWrap li p { font-size: .8em; line-height: 140%; opacity: .7; }
   /*---------------Overlay--------------*/
   .content {
+
   position: relative;
   width: 100%;
   overflow: hidden;
+
 }
 
 .content .content-overlay {
@@ -219,6 +239,9 @@ footer {
   top: 90%;
   left: 50%;
   opacity: 1;
+  @media screen and (max-width: 768px){
+    top:80%;
+  }
 }
 
 .content-details h3{
@@ -242,6 +265,12 @@ footer {
     margin: 1em auto;
     div{
       height: 350px;
+      @media screen and (max-width:768px) {
+        height:295px;
+      }
+      @media screen and (max-width:600px) {
+        height: 225px;
+      }
       > section{
         height: 100%;
         
@@ -267,22 +296,35 @@ footer {
     }
     .despaceWebExibition{
       background:url("../images/despaceWebExibition.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
       
     }
     .despaceWebPrint{
       background:url("../images/despaceWebPrint.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+  
     }
     .despaceWebPackaging{
       background:url("../images/despaceWebPackaging.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .despaceWebLogos{
       background:url("../images/despaceWebLogos.jpg");
+     background-size: cover;
+      background-repeat: no-repeat;
     }
     .despaceWebCampaign{
       background:url("../images/despaceWebCampaign.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
     .despaceWebBranding{
       background:url("../images/despaceWebBranding.jpg");
+     background-size: cover;
+      background-repeat: no-repeat;
     }
     
   }
@@ -323,10 +365,39 @@ footer {
   margin-top: 5em;
   article {
     margin: 2em 0em;
-    &:nth-child(2) .col-lg-3 img, &:nth-child(3) .col-lg-3 img {
-      width: 100%;
+    &:not(:first-child){
+      .col-lg-3{
+
+        overflow: hidden;
+        
+        &:hover{
+          @include transition-duration(0.35s);
+          @include transition-timing-function(linear);
+          @include box-shadow(0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23));
+        }
+        img{
+          @include transition-duration(0.3s);
+          @include transition-timing-function(linear);
+          @include box-shadow(0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23));
+          
+          -webkit-transition: all 0.5s linear;
+          -moz-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+         -moz-transform: scale3d(1, 1, 1);
+         transform: scale3d(1, 1, 1);
+          width: 100%;
       margin: 2%;
       padding: 5px;
+      &:hover{
+          
+
+        -webkit-transform: scale3d(1.2, 1.2, 1);
+          -moz-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+        }
+      }
+      }
     }
   }
 }
