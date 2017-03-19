@@ -3,13 +3,15 @@
 
 <head>
     <title>deSpace</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/library.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/demo.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/component.css">
+    <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -59,39 +61,42 @@
             </div>
         </article>
         <article class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/placeholder.png" data-lightbox="example-1"><img class="example-image" src="images/placeholder.png" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/placeholder.png" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="images/placeholder.png" alt="Two men in bicycle jerseys sitting outside at table having coffee"></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/placeholder.png" data-lightbox="example-1"><img class="example-image" src="images/placeholder.png" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/placeholder.png" data-lightbox="example-1"><img class="example-image" src="images/placeholder.png" alt="Girl looking out people on beach"></a>
-            
-            </div>
-        </article>
-        <article class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/placeholder.png" data-lightbox="example-1"><img class="example-image" src="images/placeholder.png" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/placeholder.png" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="images/placeholder.png" alt="Two men in bicycle jerseys sitting outside at table having coffee"></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/placeholder.png" data-lightbox="example-1"><img class="example-image" src="images/placeholder.png" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/placeholder.png" data-lightbox="example-1"><img class="example-image" src="images/placeholder.png" alt="Girl looking out people on beach"></a>
-            
-            </div>
-        </article>
+            <div id="grid-gallery" class="grid-gallery">
+                <section class="grid-wrap">
+                    <ul class="grid">
+                        <li class="grid-sizer"></li>
+                        <li>
+                            <figure>
+                                <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/lo-logosfnl.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                    </ul>
+                </section> 
+                <section class="slideshow">
+                    <ul>
+                        <li>
+                            <figure>
+                                <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/lo-logosfnl.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                    </ul>
+                    <nav>
+                        <span class="icon nav-prev"></span>
+                        <span class="icon nav-next"></span>
+                        <span class="icon nav-close"></span>
+                    </nav>
+                    <div class="info-keys icon">
+                    Navigate with arrow keys
+                    </div>
+                </section>           
     </section>
     <hr>
     <footer class="container-fluid">
@@ -125,11 +130,16 @@
         </section>
     </footer>
 </div>    
-</body>
-
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/lightbox.min.js"></script>
+
+<script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/cbpGridGallery.js"></script>
+        <script>
+            new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+        </script>
 
 <script type="text/javascript" src="js/app.js"></script>
 </body>

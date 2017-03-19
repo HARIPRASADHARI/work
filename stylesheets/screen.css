@@ -2,20 +2,15 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@font-face {
-  font-family: "Nunito Sans";
-  src: url("../fonts/NunitoSans-Regular.ttf?1481095800") format("truetype");
-}
 html, body {
   height: 100%;
-  font-family: 'Nunito Sans', sans-serif;
 }
 
 header {
   -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
   position: fixed;
-  z-index: 999;
+  z-index: 34;
   min-width: 100%;
 }
 header .navbar {
@@ -38,18 +33,47 @@ header .navbar-brand img {
   width: 50%;
   transition: all 0.5s ease 0.1s;
 }
+header .nav li:nth-child(2) a {
+  position: relative;
+}
+header .nav li:nth-child(2) a:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  left: 0px;
+  top: 5px;
+  border: 1px solid yellow;
+}
 header .nav li a {
   color: #333;
   border-top: 1px solid transparent;
   padding-top: 10px;
   padding-bottom: 10px;
-  transition: all 0.2s ease 0.10s;
+  box-shadow: none !important;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.45s;
+  -o-transition-duration: 0.45s;
+  -webkit-transition-duration: 0.45s;
+  transition-duration: 0.45s;
+  -moz-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  -o-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  -webkit-transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 header .nav li a:hover {
-  border-top: 1px solid #19ecff;
+  border-top: 1px solid #47a3da;
   box-shadow: none;
   background-color: transparent;
-  color: #19ecff;
+  color: #47a3da;
+}
+header .nav li a:focus {
+  background-color: #fff;
 }
 header .navbar-right {
   margin-top: 1.85em;
@@ -124,25 +148,26 @@ footer section article .col-lg-12:nth-child(2) {
 }
 
 .home {
+  /*----------pintrest-----------*/
   /*---------------Overlay--------------*/
 }
 .home .deSpace-home-banner {
   background: url("../images/despaceWebHome.jpg");
-  height: 500px;
-  padding-top: 6em;
 }
 .home .deSpace-home-banner article {
   max-width: 960px;
-  margin: 5em auto;
+  margin: 10em auto;
   color: #fff;
   text-align: center;
 }
+.home .deSpace-home-banner .col-lg-12 {
+  padding: 6em 0em;
+}
 .home .deSpace-home-about {
   background: url("../images/despaceWebAboutUs.jpg");
-  height: 550px;
 }
 .home .deSpace-home-about .col-lg-12 {
-  margin-top: 3em;
+  padding: 5em 0em;
 }
 .home .deSpace-home-about article {
   max-width: 960px;
@@ -155,6 +180,34 @@ footer section article .col-lg-12:nth-child(2) {
 }
 .home .deSpace-home-about article h5 {
   line-height: 1.75em;
+}
+.home #demo {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+.home img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.home #listWrap ul {
+  position: relative;
+}
+.home #listWrap li {
+  color: #FFF;
+  border: 1px solid #FFF;
+}
+.home #listWrap li h2 {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.home #listWrap li p {
+  font-size: .8em;
+  line-height: 140%;
+  opacity: .7;
 }
 .home .content {
   position: relative;
@@ -202,6 +255,11 @@ footer section article .col-lg-12:nth-child(2) {
   left: 50%;
   opacity: 1;
 }
+@media screen and (max-width: 768px) {
+  .home .content:hover .content-details {
+    top: 80%;
+  }
+}
 .home .content-details h3 {
   color: #fff;
   font-weight: 500;
@@ -223,6 +281,16 @@ footer section article .col-lg-12:nth-child(2) {
 .home .deSpace-home-work .col-lg-12 article div {
   height: 350px;
 }
+@media screen and (max-width: 768px) {
+  .home .deSpace-home-work .col-lg-12 article div {
+    height: 295px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .home .deSpace-home-work .col-lg-12 article div {
+    height: 225px;
+  }
+}
 .home .deSpace-home-work .col-lg-12 article div > section {
   height: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -242,21 +310,33 @@ footer section article .col-lg-12:nth-child(2) {
 }
 .home .deSpace-home-work .col-lg-12 article .despaceWebExibition {
   background: url("../images/despaceWebExibition.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .home .deSpace-home-work .col-lg-12 article .despaceWebPrint {
   background: url("../images/despaceWebPrint.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .home .deSpace-home-work .col-lg-12 article .despaceWebPackaging {
   background: url("../images/despaceWebPackaging.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .home .deSpace-home-work .col-lg-12 article .despaceWebLogos {
   background: url("../images/despaceWebLogos.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .home .deSpace-home-work .col-lg-12 article .despaceWebCampaign {
   background: url("../images/despaceWebCampaign.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .home .deSpace-home-work .col-lg-12 article .despaceWebBranding {
   background: url("../images/despaceWebBranding.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .home .deSpace-home-contact article {
   max-width: 960px;
@@ -292,10 +372,48 @@ footer section article .col-lg-12:nth-child(2) {
 .brand section.container-fluid article {
   margin: 2em 0em;
 }
-.brand section.container-fluid article:nth-child(2) .col-lg-3 img, .brand section.container-fluid article:nth-child(3) .col-lg-3 img {
+.brand section.container-fluid article:not(:first-child) .col-lg-3 {
+  overflow: hidden;
+}
+.brand section.container-fluid article:not(:first-child) .col-lg-3:hover {
+  -moz-transition-duration: 0.35s;
+  -o-transition-duration: 0.35s;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.brand section.container-fluid article:not(:first-child) .col-lg-3 img {
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  -webkit-transition-timing-function: linear;
+  transition-timing-function: linear;
+  -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+  -moz-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
   width: 100%;
   margin: 2%;
   padding: 5px;
+}
+.brand section.container-fluid article:not(:first-child) .col-lg-3 img:hover {
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+  -moz-transform: scale3d(1.2, 1.2, 1);
+  transform: scale3d(1.2, 1.2, 1);
 }
 
 /*---------------Chat----------------------*/

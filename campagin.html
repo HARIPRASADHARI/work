@@ -3,13 +3,15 @@
 
 <head>
     <title>deSpace</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/library.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/lightbox.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/demo.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/component.css">
+    <script src="js/modernizr.custom.js"></script>
 </head>
 
 <body>
@@ -46,45 +48,7 @@
         </nav>
     </header>
     <div class="header-fill"></div>
-    <section class="" id="listWrap">
-        <ul>
-        <li>
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </li>
-        <li>
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </li>
-        <li>
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </li>
-        <li>
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </li>
-        <li>
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </li>
-        <li>
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </li>
-        <li>
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </li>
-        <li>
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </li>
-        </ul>
-    </section>        
-        <!-- <article class="white-panel">
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </article>
-        <article class="white-panel">
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </article>
-        <article class="white-panel">
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-        </article> -->
-    <!-- </section> -->
-    <!-- <section class="container-fluid">
+    <section class="container-fluid">
         <article class="row">
             <div class="col-lg-12 text-justify">
                 <h3>
@@ -97,101 +61,388 @@
             </div>
         </article>
         <article class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="Girl looking out people on beach"></a>
-            
+            <div id="grid-gallery" class="grid-gallery">
+                <section class="grid-wrap">
+                    <ul class="grid">
+                        <li class="grid-sizer"></li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-gardens-darani-ad-30-10-16.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-gardens-vanita-ad1-14-3-16.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-hlth--ayurv-ads-3.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-hlth--ayurv-ads-4.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-riti-manapuram--for-print-1.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-riti-manapuram--for-print-2a.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-riti-manapuram--for-print-6.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w1.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w2.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w3.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w25.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w26f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w27f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w28f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w29f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w30f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-wo1.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-wo2.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-wo3.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <section class="slideshow">
+                    <ul>
+                        <li>
+                            <figure>
+                                <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-gardens-1-Indian-exprs-1-ad--31-12-16.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-gardens-darani-ad-30-10-16.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-gardens-vanita-ad1-14-3-16.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-hlth--ayurv-ads-3.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-hlth--ayurv-ads-4.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-riti-manapuram--for-print-1.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-riti-manapuram--for-print-2a.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-riti-manapuram--for-print-6.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w1.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w2.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w3.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w25.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w26f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w27f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w28f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w29f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-w30f.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-wo1.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-wo2.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                            <!--<figcaption>
+                                    <h3>Letterpress asymmetrical</h3>
+                                    <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
+                                </figcaption>-->
+                                <img src="images/work/c-wo3.jpg" alt="images01"/>
+                            </figure>
+                        </li>
+                    </ul>
+                    <nav>
+                        <span class="icon nav-prev"></span>
+                        <span class="icon nav-next"></span>
+                        <span class="icon nav-close"></span>
+                    </nav>
+                    <div class="info-keys icon">
+                    Navigate with arrow keys
+                    </div>
+                </section>        
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-gardens-darani-ad-30-10-16.jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="images/work/c-gardens-darani-ad-30-10-16.jpg" alt="Two men in bicycle jerseys sitting outside at table having coffee"></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-gardens-vanita-ad1-14-3-16.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-gardens-vanita-ad1-14-3-16.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-hlth--ayurv-ads-3.jpg" data-lightbox="example-1">
-                <img class="example-image" src="images/work/c-hlth--ayurv-ads-3.jpg" alt="Girl looking out people on beach">
-            </a>
-            
-            </div>
-        </article>
-        <article class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-hlth--ayurv-ads-4.jpg" data-lightbox="example-1">
-                <img class="example-image" src="images/work/c-hlth--ayurv-ads-4.jpg" alt="Girl looking out people on beach">
-            </a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-riti-manapuram--for-print-1.jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="images/work/c-riti-manapuram--for-print-1.jpg" alt="Two men in bicycle jerseys sitting outside at table having coffee"></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-riti-manapuram--for-print-2a.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-riti-manapuram--for-print-2a.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-riti-manapuram--for-print-6.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-riti-manapuram--for-print-6.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-        </article>
-        <article class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w1.jpg" data-lightbox="example-1">
-                <img class="example-image" src="images/work/c-w1.jpg" alt="Girl looking out people on beach">
-            </a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w2.jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="images/work/c-w2.jpg" alt="Two men in bicycle jerseys sitting outside at table having coffee"></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w3.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-w3.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w25.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-w25.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-        </article>
-        <article class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w26f.jpg" data-lightbox="example-1">
-                <img class="example-image" src="images/work/c-w26f.jpg" alt="Girl looking out people on beach">
-            </a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w27f.jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="images/work/c-w27f.jpg" alt="Two men in bicycle jerseys sitting outside at table having coffee"></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w28f.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-w28f.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w29f.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-w29f.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-        </article>
-        <article class="row">
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-w30f.jpg" data-lightbox="example-1">
-                <img class="example-image" src="images/work/c-w30f.jpg" alt="Girl looking out people on beach">
-            </a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-wo1.jpg" data-lightbox="example-1" data-title="Optional caption."><img class="example-image" src="images/work/c-wo1.jpg" alt="Two men in bicycle jerseys sitting outside at table having coffee"></a>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-wo2.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-wo2.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 text-center">
-            <a class="example-image-link" href="images/work/c-wo3.jpg" data-lightbox="example-1"><img class="example-image" src="images/work/c-wo3.jpg" alt="Girl looking out people on beach"></a>
-            
-            </div>
-        </article>
-    </section> -->
+        </article>                
+        
+    </section> 
     <hr>
     <footer class="container-fluid">
         <section class="row deSpace-home-contact" id="section3">
@@ -224,94 +475,17 @@
         </section>
     </footer>
 </div>    
-</body>
-
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/lightbox.min.js"></script>
-<!-- <script type="text/javascript" src="js/pinterest_grid.js"></script> -->
+
+<script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/cbpGridGallery.js"></script>
+        <script>
+            new CBPGridGallery( document.getElementById( 'grid-gallery' ) );
+        </script>
+
 <script type="text/javascript" src="js/app.js"></script>
-<script>
-$(window).load(function() {
-  hoonPlugin(5);
-});
-
-$(window).bind("resize", function() {
-  var winW = $(window).width();
-
-  if (winW >= 1024) {
-    hoonPlugin(5);
-  } else if (winW < 1024 && winW >= 800) {
-    hoonPlugin(3);
-  } else if (winW < 800 && winW >= 480) {
-    hoonPlugin(2);
-  } else if (winW < 480) {
-    hoonPlugin(1);
-  }
-});
-
-function hoonPlugin(asd) {
-  $("#listWrap").hoonseok({
-    column: asd,
-    margin: 10,
-    padding: 20,
-    background: "#666"
-  });
-}
-
-! function(t) {
-  t.fn.hoonseok = function(i, n) {
-    return t.isFunction(i) && (n = i, i = null), t.fn.hoonseok.setting = {
-      column: 4,
-      margin: 10,
-      padding: 15,
-      background: "transparent"
-    }, i = t.extend(t.fn.hoonseok.setting, i), this.each(function() {
-      var n = 0;
-      t(this).find("li").each(function() {
-        var s = (t(this), t(window).width()),
-          o = t(this).index(),
-          e = parseInt(t(this).prev().css("left")),
-          r = (parseInt(t(this).prev().css("top")), t(this).prev().outerWidth(!0)),
-          c = i.margin,
-          a = i.padding,
-          h = i.column,
-          d = i.background;
-        if (t(this).css({
-            padding: a,
-            "box-sizing": "border-box",
-            "background-color": d,
-            position: "absolute",
-            top: 0,
-            left: 0
-          }), h > o) n++, 0 != o ? t(this).css({
-          width: r,
-          left: e + r + c,
-          top: c
-        }) : t(this).css({
-          width: (s - c * (h + 1)) / h,
-          left: c,
-          top: c
-        });
-        else if (o >= h) {
-          var p = t(this).parent().find("li").eq(o - h),
-            f = p.outerHeight(!0),
-            u = p.offset(),
-            l = u.top;
-          n % h != 0 ? (n++, t(this).css({
-            width: r,
-            left: e + r + c,
-            top: l + f + c
-          })) : (n++, t(this).css({
-            width: r,
-            left: c,
-            top: l + f + c
-          }))
-        }
-      })
-    })
-  }
-}(jQuery);
-</script>
 </body>
 </html>
