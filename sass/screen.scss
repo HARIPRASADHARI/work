@@ -5,6 +5,8 @@
 
 @import "compass/css3";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transform";
+@import "compass/css3/transition";
 
 html, body {
     height: 100%;
@@ -42,25 +44,54 @@ header {
         }
     }
 
-    .nav li {
-        &:nth-child(2) {
-            a {
-                position: relative;
+    @include keyframes(tag-bounce) {
+  0% {
+    @include transform( scale(0.90) );
+    opacity: 0;
+  }
+  50%{
+    @include transform( scale(0.95) );
+  }
+  100% {
+    @include transform( scale(1.0) );
+  }
+}
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
 
-                &:after {
-                    position: absolute;
-                    content: "";
-                    display: block;
-                    width: 15px;
-                    height: 15px;
-                    background-color: red;
-                    left: 0px;
-                    top: 5px;
-                    border: 1px solid yellow;
-                }
-            }
-        }
+@include keyframes(no-anim) {
+  
+}
+
+
+@mixin animation ($stuff ) {
+    -webkit-animation: $stuff;
+    -moz-animation: $stuff;
+    -ms-animation: $stuff;
+    animation: $stuff;
+}
+    .dropdown{
+
     }
+    .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+    @include animation(tag-bounce 0.2s  ease-in);
+    
+   
+ }
 
     .nav li a {
         color: #333;
@@ -69,11 +100,11 @@ header {
         padding-bottom: 10px;
         box-shadow: none !important;
 
-        @include transition-property(all);
+        
 
-        @include transition-duration(0.45s);
+        @include transition-duration(0.75s);
 
-        @include transition-timing-function(cubic-bezier(0.25, 0.8, 0.25, 1));
+        @include transition-timing-function(ease-in);
 
         &:hover {
             border-top: 1px solid #47a3da;
