@@ -48,11 +48,12 @@
             var scroll = $(window).scrollTop();
 
             if (scroll >= 50) {
-
+                $("header").addClass("addShadow");
                 $(".important-class").addClass("padding-on-my-header");
             }
             if (scroll < 50) {
                 $(".important-class").removeClass("padding-on-my-header");
+                $("header").removeClass("addShadow");
 
             }
         }).resize(function() {
