@@ -4,8 +4,8 @@
 <head>
     <title>deSpace</title>
     <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/library.css">
@@ -16,37 +16,75 @@
 
 <body>
 <div class="brand">
-    <header>
-        <nav class="navbar important-class">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.html">
-                        <img id="logo" src="images/despaceLogo.png" alt="De Space">
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse" id="myNavbar">
-                    
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                        <a href="#section1">About</a>
-                        </li>
-                        <li>
-                        <a href="#section2">Work</a>
-                        </li>
-                        <li>
-                        <a href="#section3">
-                        Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+  <header>
+      <nav class="  navbar important-class ">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button id="hamburger-icon" type="button" class="navbar-toggle">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                <h1 class="navbar-brand">
+                   <a  href="index.html">
+                      <img id="logo" src="images/despaceLogo.png" alt="De Space">
+                  </a>
+                </h1>
+              </div>
+              <div class="collapse hidden-sm hidden-xs  navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li>
+                          <a href="#section1">About</a>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#section2" class="dropdown-toggle" data-toggle="dropdown">Work<b class="caret"></b></a>
+                          <ul class="dropdown-menu multi-level">
+                              <li><a href="brand.html">Brand</a></li>
+                              <li><a href="campagin.html">Campagin</a></li>
+                              <li><a href="logos.html">Logos</a></li>
+                              <li><a href="package.html">Package</a></li>
+                              <li><a href="print.html">Print</a></li>
+                              <li><a href="#">Website</a></li>
+                          </ul>
+                      </li>
+                      <li>
+                          <a href="#section3">
+                  Contact</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <div id="mySidenav" class="slide-menu hidden-md hidden-lg">
+      <div class="slide-header">
+            <!-- <div class="slide-close-button">
+                <button class="close"><i class="fa fa-close"></i></button>
+            </div> -->
+      </div>
+      <div class="slide-menu-here">
+      <ul class="menu">
+          <li>
+              <a href="#section1">About</a>
+          </li>
+          <li class="title">
+              <a href="#section2" class=" dropdownmenu" data-toggle="dropdown">Work</a><div class="dropdownmenu"></div>
+              <ul class="sub-menu">
+                <li><a href="brand.html">Brand</a></li>
+                <li><a href="campagin.html">Campagin</a></li>
+                <li><a href="logos.html">Logos</a></li>
+                <li><a href="package.html">Package</a></li>
+                <li><a href="print.html">Print</a></li>
+                  <li><a href="#">Website</a></li>
+              </ul>
+          </li>
+          <li>
+              <a href="#section3">
+                  Contact</a>
+          </li>
+      </ul>
+      </div>
+  </div>
     <div class="header-fill"></div>
     <section class="container-fluid">
         <article class="row">
@@ -56,7 +94,7 @@
                 </h3>
                 <p>
                     Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>        
+                </p>
 
             </div>
         </article>
@@ -71,7 +109,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-bbsbag.jpg" alt="images01"/>
+                                <img src="images/package/pa-bbsbag.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -80,7 +118,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care1-copy-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care1-copy-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -89,7 +127,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care2-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care2-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -98,7 +136,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care4-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care4-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -107,7 +145,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care3copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care3copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -116,7 +154,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care-4-a-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care-4-a-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -125,7 +163,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care5.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care5.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -134,7 +172,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care5a.jpg" alt="images01"/>
+                                <img src="images/package/pa-care5a.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -143,7 +181,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care6.jpg" alt="images01"/>
+                                <img src="images/package/pa-care6.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -152,7 +190,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care7.jpg" alt="images01"/>
+                                <img src="images/package/pa-care7.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -161,7 +199,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care-vqdafdfdqjmqugyw9e-2.jpg" alt="images01"/>
+                                <img src="images/package/pa-care-vqdafdfdqjmqugyw9e-2.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -170,7 +208,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care-vqdafe.jpg" alt="images01"/>
+                                <img src="images/package/pa-care-vqdafe.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -179,7 +217,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care-vqdx.jpg" alt="images01"/>
+                                <img src="images/package/pa-care-vqdx.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -188,7 +226,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-garden-shopping-bags.jpg" alt="images01"/>
+                                <img src="images/package/pa-garden-shopping-bags.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -197,7 +235,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-gZefia-bag.jpg" alt="images01"/>
+                                <img src="images/package/pa-gZefia-bag.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -206,7 +244,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-hlth-ayur--btl.jpg" alt="images01"/>
+                                <img src="images/package/pa-hlth-ayur--btl.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -215,7 +253,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-IMG_7088-copy-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-IMG_7088-copy-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -224,7 +262,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-OVA-FAWAZ-pa-plastic-bag-D.jpg" alt="images01"/>
+                                <img src="images/package/pa-OVA-FAWAZ-pa-plastic-bag-D.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -233,7 +271,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-OVA-pickle-pack.jpg" alt="images01"/>
+                                <img src="images/package/pa-OVA-pickle-pack.jpg" alt="images01"/>
                             </figure>
                         </li>
                     </ul>
@@ -246,7 +284,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-bbsbag.jpg" alt="images01"/>
+                                <img src="images/package/pa-bbsbag.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -255,7 +293,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care1-copy-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care1-copy-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -264,7 +302,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care2-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care2-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -273,7 +311,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care4-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care4-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -282,7 +320,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care3copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care3copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -291,7 +329,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care-4-a-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care-4-a-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -300,7 +338,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-Care5.jpg" alt="images01"/>
+                                <img src="images/package/pa-Care5.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -309,7 +347,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care5a.jpg" alt="images01"/>
+                                <img src="images/package/pa-care5a.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -318,7 +356,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care6.jpg" alt="images01"/>
+                                <img src="images/package/pa-care6.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -327,7 +365,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care7.jpg" alt="images01"/>
+                                <img src="images/package/pa-care7.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -336,7 +374,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care-vqdafdfdqjmqugyw9e-2.jpg" alt="images01"/>
+                                <img src="images/package/pa-care-vqdafdfdqjmqugyw9e-2.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -345,7 +383,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care-vqdafe.jpg" alt="images01"/>
+                                <img src="images/package/pa-care-vqdafe.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -354,7 +392,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-care-vqdx.jpg" alt="images01"/>
+                                <img src="images/package/pa-care-vqdx.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -363,7 +401,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-garden-shopping-bags.jpg" alt="images01"/>
+                                <img src="images/package/pa-garden-shopping-bags.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -372,7 +410,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-gZefia-bag.jpg" alt="images01"/>
+                                <img src="images/package/pa-gZefia-bag.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -381,7 +419,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-hlth-ayur--btl.jpg" alt="images01"/>
+                                <img src="images/package/pa-hlth-ayur--btl.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -390,7 +428,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-IMG_7088-copy-copy.jpg" alt="images01"/>
+                                <img src="images/package/pa-IMG_7088-copy-copy.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -399,7 +437,7 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-OVA-FAWAZ-pa-plastic-bag-D.jpg" alt="images01"/>
+                                <img src="images/package/pa-OVA-FAWAZ-pa-plastic-bag-D.jpg" alt="images01"/>
                             </figure>
                         </li>
                         <li>
@@ -408,10 +446,10 @@
                                     <h3>Letterpress asymmetrical</h3>
                                     <p>Kale chips lomo biodiesel stumptown Godard Tumblr, mustache sriracha tattooed cray aute slow-carb placeat delectus. Letterpress asymmetrical fanny pack art party est pour-over skateboard anim quis, ullamco craft beer.</p>
                                 </figcaption>-->
-                                <img src="images/work/pa-OVA-pickle-pack.jpg" alt="images01"/>
+                                <img src="images/package/pa-OVA-pickle-pack.jpg" alt="images01"/>
                             </figure>
                         </li>
-                    </ul>    
+                    </ul>
                     <nav>
                         <span class="icon nav-prev"></span>
                         <span class="icon nav-next"></span>
@@ -421,7 +459,7 @@
                     Navigate with arrow keys
                     </div>
                 </section>
-        </div>            
+        </div>
         </article>
     </section>
     <hr>
@@ -431,20 +469,20 @@
             <div class="col-lg-12">
                 <ul class="list-inline">
                     <li>
-                        Varanasi, 
+                        Varanasi,
                     </li>
                     <li>
-                        T.C Palaya, 
+                        T.C Palaya,
                     </li>
                     <li>
                         Bangalore
-                    </li> 
+                    </li>
                     <li>
                         M: 07795441371
                     </li>
                     <li>
                         <a href="despace4u@gmail.com">E: despace4u@gmail.com</a>
-                    </li>                           
+                    </li>
                 </ul>
             </div>
             <div class="col-lg-12">
@@ -455,7 +493,8 @@
             </article>
         </section>
     </footer>
-</div>    
+      <div class="mdl-layout__obfuscator"></div>
+</div>
 
 
 <script type="text/javascript" src="js/jquery.js"></script>
