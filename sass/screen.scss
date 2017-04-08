@@ -8,17 +8,20 @@
 @import "compass/css3/transform";
 @import "compass/css3/transition";
 @import "mixins";
-
-
-html, body {
+html,
+body {
     height: 100%;
 }
-h1{
-  margin: 0px 0px !important;
+
+h1 {
+    margin: 0px 0px !important;
 }
+
+
 /*--------Mobile SideNav------------*/
+
 .slide-menu {
-  position: fixed;
+    position: fixed;
     -webkit-transform: translateX(-285px);
     -ms-transform: translateX(-285px);
     transform: translateX(-285px);
@@ -27,77 +30,89 @@ h1{
     will-change: transform;
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
-    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     -webkit-transition-property: -webkit-transform;
     transition-property: transform;
-  background: #fff;
-  top:0;
-  bottom: 0;
-  color: #333;
-  z-index: 9999;
-  width: 250px;
-    -webkit-box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.25);
-    -moz-box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.25);
-    box-shadow: 3px 0px 7px 0px rgba(0,0,0,0.25);
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    color: #333;
+    z-index: 9999;
+    width: 250px;
+    -webkit-box-shadow: 3px 0px 7px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 3px 0px 7px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 3px 0px 7px 0px rgba(0, 0, 0, 0.25);
 }
+
 .slide-header {
-  height: 70px;
-  color: #fff;
-  top:0;
-  background: url(../images/despaceLogo.png)no-repeat center center/cover;
-  position: relative;
-  background-size: 120px;
-  text-align: center
+    height: 70px;
+    color: #fff;
+    top: 0;
+    background: url(../images/despaceLogo.png)no-repeat center center/cover;
+    position: relative;
+    background-size: 120px;
+    text-align: center
 }
-.slide-close-button button:hover{
-  background-color: #a1a1a1 !important;
+
+.slide-close-button button:hover {
+    background-color: #a1a1a1 !important;
 }
+
 .slide-close-button button:active {
-  background-color: #bbb !important;
+    background-color: #bbb !important;
 }
+
 .slide-close-button button {
-  background: #aaa !important;
-  border: 0;
-  font-size: 16px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  color: #fff;
-  cursor: pointer;
-  position: absolute;
-  bottom: -15px;
-  outline: none;
-  right: 2em;
-  z-index: 99999;
+    background: #aaa !important;
+    border: 0;
+    font-size: 16px;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    bottom: -15px;
+    outline: none;
+    right: 2em;
+    z-index: 99999;
 }
+
 .slide-header>h1 {
-  padding: 2em 0 0
+    padding: 2em 0 0
 }
+
 .slide-header p {
-  font-size: 12px
+    font-size: 12px
 }
+
 .slide-menu>.slide-menu-here>.menu {
-  padding: .5em 0;
+    padding: .5em 0;
+
 }
+
 .slide-menu>.slide-menu-here>.menu li {
-  position: relative
+    position: relative
 }
-.slide-menu>.slide-menu-here>.menu li>a{
-  padding: .8em 1em;
-  width: 100%;
-  position: relative;
-  border-bottom: 1px solid #ececec;
-  display: inline-block
+
+.slide-menu>.slide-menu-here>.menu li>a {
+    padding: .8em 1em;
+    width: 100%;
+    position: relative;
+    border-bottom: 1px solid #ececec;
+    display: inline-block
 }
+
 .slide-menu>.slide-menu-here>.menu li.title span {
-  padding: .8em 1em;
-  border-bottom: 1px solid #ececec;
-  width: 100%;
-  position: relative;
-  display: inline-block;
+    padding: .8em 1em;
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+    position: relative;
+    display: inline-block;
 }
+
 .slide-menu>.slide-menu-here>.menu li>.sub-menu {
     -webkit-transform: translateY(-100px);
     -ms-transform: translateY(-100px);
@@ -107,48 +122,60 @@ h1{
     will-change: transform;
     -webkit-transition-duration: .65s;
     transition-duration: .65s;
-    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
     -webkit-transition-property: -webkit-transform;
     transition-property: transform;
-    display:none
+    display: none
 }
+
 .slide-menu>.slide-menu-here>.menu li>.sub-menu.active {
-  display: block;
+    display: block;
     -webkit-transform: translateY(0px);
     -ms-transform: translateY(0px);
     transform: translateY(0px);
 }
+
 .slide-menu>.slide-menu-here>.menu li>.sub-menu>li>a {
-  padding-left: 2em;
-  font-size: 13px;
-  border-bottom: 1px solid #f5f5f5
+    padding-left: 2em;
+    font-size: 13px;
+    border-bottom: 1px solid #f5f5f5
 }
+
 .slide-menu>.slide-menu-here>.menu li.title>.dropdownmenu:after {
-  content: "\f107";
-  top: 10px;
-  position: Absolute;
-  right: 2em;
-  background-color: #aaa !important;
-  width: 20px;
-  height: 20px;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 50%;
-  line-height: 20px;
-  color: #fff;
-  font: normal normal normal 14px/20px FontAwesome;
+    content: "\f107";
+    top: 10px;
+    position: Absolute;
+    right: 2em;
+    background-color: #aaa !important;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    line-height: 20px;
+    color: #fff;
+    font: normal normal normal 14px/20px FontAwesome;
 }
+
 .slide-menu a:hover {
-  background-color: #f8f8f8
+    background-color: #f8f8f8
 }
+
+
 /* Slide Left  */
+
 .slide-left {
-      -webkit-transform: translateX(0);
+    -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
     z-index: 99999;
+    height: 100%;
+    overflow-y: scroll !important;
 }
+
+
+
 .mdl-layout__obfuscator {
     background-color: transparent;
     position: fixed;
@@ -161,27 +188,29 @@ h1{
     transition-property: background-color;
     -webkit-transition-duration: .2s;
     transition-duration: .2s;
-    -webkit-transition-timing-function: cubic-bezier(.4,0,.2,1);
-    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    -webkit-transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
 }
+
 .slide-left~.mdl-layout__obfuscator {
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
     visibility: visible;
     z-index: 45;
 }
 
+
 /*--------Mobile SideNav End------------*/
 
-.addShadow{
+.addShadow {
     @include box-shadow(0 0 5px 0 rgba(0, 0, 0, 0.4));
 }
+
 header {
     // -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
     // box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
     position: fixed;
     z-index: 34;
     min-width: 100%;
-
     .navbar {
         margin-bottom: 0px;
         background: #fff;
@@ -189,20 +218,17 @@ header {
         transition: all 0.5s ease 0.1s;
         border-radius: 0px;
     }
-
     .padding-on-my-header {
         padding: 17px 0.9375rem 35px 0.9375rem;
     }
-
     .navbar-toggle .icon-bar {
         background-color: #19ecff;
     }
-
     .navbar-brand {
         padding: 0px 15px;
-        @media screen and (min-width: map-get($breakpoints, exsmall))
-        and (max-width: map-get($breakpoints, new-breakpoint)-1px){
-          padding: 0px ;
+        @media screen and (min-width: map-get($breakpoints, exsmall)) and (max-width: map-get($breakpoints, medium)) {
+            float:none;
+            padding: 15px 15px;
         }
         img {
             width: 50%;
@@ -210,129 +236,113 @@ header {
         }
     }
     .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s
-}
-
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s
+    }
+    .sidenav a:hover,
+    .offcanvas a:focus {
+        color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {
+            padding-top: 15px;
+        }
+        .sidenav a {
+            font-size: 18px;
+        }
+    }
     @include keyframes(tag-bounce) {
-  0% {
-    @include transform( scale(0.90) );
-    opacity: 0;
-  }
-  50%{
-    @include transform( scale(0.95) );
-  }
-  100% {
-    @include transform( scale(1.0) );
-  }
-}
-@mixin keyframes($name) {
-  @-webkit-keyframes #{$name} {
-    @content;
-  }
-  @-moz-keyframes #{$name} {
-    @content;
-  }
-  @-ms-keyframes #{$name} {
-    @content;
-  }
-  @keyframes #{$name} {
-    @content;
-  }
-}
-
-@include keyframes(no-anim) {
-
-}
-
-
-@mixin animation ($stuff ) {
-    -webkit-animation: $stuff;
-    -moz-animation: $stuff;
-    -ms-animation: $stuff;
-    animation: $stuff;
-}
-    .dropdown{
-
+        0% {
+            @include transform( scale(0.90));
+            opacity: 0;
+        }
+        50% {
+            @include transform( scale(0.95));
+        }
+        100% {
+            @include transform( scale(1.0));
+        }
     }
+    @mixin keyframes($name) {
+        @-webkit-keyframes #{$name} {
+            @content;
+        }
+        @-moz-keyframes #{$name} {
+            @content;
+        }
+        @-ms-keyframes #{$name} {
+            @content;
+        }
+        @keyframes #{$name} {
+            @content;
+        }
+    }
+    @include keyframes(no-anim) {}
+    @mixin animation ($stuff) {
+        -webkit-animation: $stuff;
+        -moz-animation: $stuff;
+        -ms-animation: $stuff;
+        animation: $stuff;
+    }
+    .dropdown {}
     .dropdown:hover .dropdown-menu {
-    display: block;
-    margin-top: 0; // remove the gap so it doesn't close
-    @include animation(tag-bounce 0.2s  ease-in);
-    li a{
-      border-top: 1px solid transparent !important;
+        display: block;
+        margin-top: 0; // remove the gap so it doesn't close
+        @include animation(tag-bounce 0.2s ease-in);
+        li a {
+            border-top: 1px solid transparent !important;
+        }
     }
-
- }
-
     .nav li a {
         color: lightslategrey;
         border-top: 1px solid transparent;
         padding-top: 10px;
         padding-bottom: 10px;
         box-shadow: none !important;
-
-
-
         @include transition-duration(0.75s);
-
         @include transition-timing-function(ease-in);
-
         &:hover {
             border-top: 1px solid #47a3da;
             box-shadow: none;
             background-color: transparent;
             color: #47a3da;
         }
-
         &:focus {
             background-color: #fff;
         }
     }
-
     .navbar-right {
         margin-top: 1.85em;
     }
 }
-.navbar-toggle{
-  @media screen and (min-width: map-get($breakpoints, exsmall))
-  and (max-width: map-get($breakpoints, medium)-33px){
-    margin-right: 0px;
-  }
+
+.navbar-toggle {
+    @media screen and (min-width: map-get($breakpoints, exsmall)) and (max-width: map-get($breakpoints, medium)-33px) {
+        margin-right: 0px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -353,21 +363,23 @@ header {
     }
 }
 
-
-
-
-    header .navbar-brand img {
-      @media screen and (min-width: map-get($breakpoints, exsmall))
-      and (max-width: map-get($breakpoints, new-breakpoint)-1px){
+header .navbar-brand img {
+    @media screen and (min-width: map-get($breakpoints, exsmall)) and (max-width: map-get($breakpoints, medium)-1px) {
         width: 45%;
         @include transform(translateY(-26px));
+        @include mq(landscape){
+        width: 30%;
     }
-    @media screen and (min-width: map-get($breakpoints, new-breakpoint))
-    and (max-width: map-get($breakpoints, medium)+1px){
-      width: 50%;
-      @include transform(translateY(-26px));
     }
-  }
+
+    @media screen and (min-width: map-get($breakpoints, new-breakpoint)) and (max-width: map-get($breakpoints, medium)+1px) {
+        width: 50%;
+        @include transform(translateY(-26px));
+        @include mq(landscape){
+        width: 20%;
+    }
+    }
+}
 
 @media screen and (max-width: 768px) {
     header .nav li {
@@ -394,29 +406,24 @@ header {
 
 footer {
     min-height: 140px;
-
     .deSpace-home-contact article {
         max-width: 960px;
         margin: 0em auto;
         text-align: center;
-
         .list-inline li {
             &:nth-child(3) {
                 padding-right: 2em;
             }
-
             &:last-child a {
                 text-decoration: none;
                 color: #000;
             }
         }
     }
-
     section article .col-lg-12 {
         &:nth-child(1) {
             margin-top: 2em;
         }
-
         &:nth-child(2) {
             margin-top: 3em;
         }
@@ -425,65 +432,53 @@ footer {
 
 .home {
     .deSpace-home-banner {
-
-       // background: url("../images/despaceWebHome.jpg");
-       background-color: #fff;
+        // background: url("../images/despaceWebHome.jpg");
+        background-color: #fff;
         article {
             max-width: 1200px;
             margin: 10em auto;
-            @media screen and (min-width: map-get($breakpoints, new-breakpoint))
-            and (max-width: map-get($breakpoints, medium)){
-              margin: 5em 2em;
+            @media screen and (min-width: map-get($breakpoints, new-breakpoint)) and (max-width: map-get($breakpoints, medium)) {
+                margin: 5em 2em;
             }
-            @media screen and (min-width: map-get($breakpoints, exsmall))
-            and (max-width: map-get($breakpoints, new-breakpoint)+1px){
-              margin: 2.5em 2.75em;
+            @media screen and (min-width: map-get($breakpoints, exsmall)) and (max-width: map-get($breakpoints, new-breakpoint)+1px) {
+                margin: 2.5em 2.75em;
             }
-
-            > h5{
+            > h5 {
                 font-size: 18px;
                 color: #7f888f;
                 line-height: 1.75em;
-                b{
-                  font-weight: 400 !important;
+                b {
+                    font-weight: 400 !important;
                 }
             }
         }
-
         .col-lg-12 {
             padding: 6em 0em;
-            @media screen and (min-width: map-get($breakpoints, exsmall))
-            and (max-width: map-get($breakpoints, medium) + 175px) {
-
-            }
+            @media screen and (min-width: map-get($breakpoints, exsmall)) and (max-width: map-get($breakpoints, medium) + 175px) {}
         }
     }
-
     .deSpace-home-about {
         //background: url("../images/despaceWebAboutUs.jpg");
         background-color: #01a3bc;
         .col-lg-12 {
             padding: 5em 0em;
         }
-
         article {
             max-width: 1200px;
             margin: 2em auto;
             color: #fff;
             text-align: justify;
-            @media screen and (min-width: map-get($breakpoints, new-breakpoint))
-            and (max-width: map-get($breakpoints, medium)){
-              margin: 5em 2em;
+            @media screen and (min-width: map-get($breakpoints, new-breakpoint)) and (max-width: map-get($breakpoints, medium)) {
+                margin: 5em 2em;
             }
-            @media screen and (min-width: map-get($breakpoints, exsmall))
-            and (max-width: map-get($breakpoints, new-breakpoint)+1px){
-              margin: 2.5em 2.75em;
+            @media screen and (min-width: map-get($breakpoints, exsmall)) and (max-width: map-get($breakpoints, new-breakpoint)+1px) {
+                margin: 2.5em 2.75em;
             }
             &:nth-child(2) {
                 margin-top: 1em;
             }
-            h4{
-                color:#000;
+            h4 {
+                color: #000;
                 font-weight: bolder;
             }
             h5 {
@@ -492,49 +487,41 @@ footer {
             }
         }
     }
-
     /*----------pintrest-----------*/
     #demo {
         position: relative;
         max-width: 100%;
         width: 100%;
     }
-
     img {
         width: 100%;
         max-width: 100%;
         height: auto;
     }
-
     #listWrap ul {
         position: relative;
     }
-
     #listWrap li {
         color: #FFF;
         border: 1px solid #FFF;
     }
-
     #listWrap li h2 {
         margin-bottom: 15px;
         font-size: 1.3em;
         font-weight: bold;
         text-transform: uppercase;
     }
-
     #listWrap li p {
         font-size: .8em;
         line-height: 140%;
         opacity: .7;
     }
-
     /*---------------Overlay--------------*/
     .content {
         position: relative;
         width: 100%;
         overflow: hidden;
     }
-
     .content .content-overlay {
         background: rgba(0, 0, 0, 0.7);
         position: absolute;
@@ -549,15 +536,12 @@ footer {
         -moz-transition: all 0.4s ease-in-out 0s;
         transition: all 0.4s ease-in-out 0s;
     }
-
     .content:hover .content-overlay {
         opacity: 1;
     }
-
     .content-image {
         width: 100%;
     }
-
     .content-details {
         position: absolute;
         text-align: center;
@@ -574,17 +558,14 @@ footer {
         -moz-transition: all 0.3s ease-in-out 0s;
         transition: all 0.3s ease-in-out 0s;
     }
-
     .content:hover .content-details {
         top: 90%;
         left: 50%;
         opacity: 1;
-
         @media screen and (max-width: 768px) {
             top: 80%;
         }
     }
-
     .content-details h3 {
         color: #fff;
         font-weight: 500;
@@ -592,65 +573,51 @@ footer {
         margin-bottom: 0.5em;
         text-transform: uppercase;
     }
-
     .content-details p {
         color: #fff;
         font-size: 0.8em;
     }
-
     .fadeIn-top {
         top: 20%;
     }
-
     .deSpace-home-work .col-lg-12 article {
-
-
-            h5{
-                color:#01a3bc;
-                font-weight: bolder;
-                font-size: 18px;
+        h5 {
+            color: #01a3bc;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+        &:nth-child(1) {
+            max-width: 1200px;
+            margin: 1em auto;
+            @media screen and (min-width: map-get($breakpoints, new-breakpoint)) and (max-width: map-get($breakpoints, medium)) {
+                margin: 1em 1.50em;
             }
-            &:nth-child(1){
-                max-width: 1200px;
-                margin: 1em auto;
-                @media screen and (min-width: map-get($breakpoints, new-breakpoint))
-                and (max-width: map-get($breakpoints, medium)){
-                  margin: 1em 1.50em;
-                }
-                @media screen and (min-width: map-get($breakpoints, exsmall))
-                and (max-width: map-get($breakpoints, new-breakpoint)+1px){
-                  margin: 1em 1.50em;
-                }
+            @media screen and (min-width: map-get($breakpoints, exsmall)) and (max-width: map-get($breakpoints, new-breakpoint)+1px) {
+                margin: 1em 1.50em;
             }
-            &:nth-child(n+2){
-                max-width: 1400px;
-                margin: 1em auto;
-                @media screen and (min-width: map-get($breakpoints, new-breakpoint))
-                and (max-width: map-get($breakpoints, medium)){
-                  margin: 1em 1.50em;
-                }
-                @media screen and (min-width: map-get($breakpoints, exsmall))
-                and (max-width: map-get($breakpoints, new-breakpoint)+1px){
-                  margin: 1em 1.50em;
-                }
+        }
+        &:nth-child(n+2) {
+            max-width: 1400px;
+            margin: 1em auto;
+            @media screen and (min-width: map-get($breakpoints, new-breakpoint)) and (max-width: map-get($breakpoints, medium)) {
+                margin: 1em 1.50em;
             }
-
+            @media screen and (min-width: map-get($breakpoints, exsmall)) and (max-width: map-get($breakpoints, new-breakpoint)+1px) {
+                margin: 1em 1.50em;
+            }
+        }
         div {
             height: 350px;
-
             @media screen and (max-width: 768px) {
                 height: 295px;
             }
-
             @media screen and (max-width: 600px) {
                 height: 225px;
             }
-
             > section {
                 height: 100%;
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
                 transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-
                 &:hover {
                     -webkit-transition-delay: 0.1s;
                     -moz-transition-delay: 0.1s;
@@ -661,59 +628,49 @@ footer {
                     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.26);
                 }
             }
-
             &.col-lg-6 {
                 padding: 2%;
             }
         }
-
         .despaceWebExibition {
             background: url("../images/despaceWebExibition.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
-
         .despaceWebPrint {
             background: url("../images/despaceWebPrint.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
-
         .despaceWebPackaging {
             background: url("../images/despaceWebPackaging.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
-
         .despaceWebLogos {
             background: url("../images/despaceWebLogos.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
-
         .despaceWebCampaign {
             background: url("../images/despaceWebCampaign.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
-
         .despaceWebBranding {
             background: url("../images/despaceWebBranding.jpg");
             background-size: cover;
             background-repeat: no-repeat;
         }
     }
-
     .deSpace-home-contact article {
         max-width: 960px;
         margin: 0em auto;
         text-align: center;
-
         .list-inline li {
             &:nth-child(3) {
                 padding-right: 2em;
             }
-
             &:last-child a {
                 text-decoration: none;
                 color: #000;
@@ -741,29 +698,34 @@ footer {
     margin: 0 auto;
     width: 100%;
     margin-top: 5em;
-
     article {
         margin: 2em 0em;
-
-        &:not(:first-child) {
+        &:not(first-child) {
             .col-lg-3 {
                 overflow: hidden;
-
                 &:hover {
                     @include transition-duration(0.35s);
-
                     @include transition-timing-function(linear);
-
-                    @include box-shadow(0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23));
+                    @include box-shadow(0 3px 6px rgba(0,
+                    0,
+                    0,
+                    0.16),
+                    0 3px 6px rgba(0,
+                    0,
+                    0,
+                    0.23));
                 }
-
                 img {
                     @include transition-duration(0.3s);
-
                     @include transition-timing-function(linear);
-
-                    @include box-shadow(0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23));
-
+                    @include box-shadow(0 3px 6px rgba(0,
+                    0,
+                    0,
+                    0.16),
+                    0 3px 6px rgba(0,
+                    0,
+                    0,
+                    0.23));
                     -webkit-transition: all 0.5s linear;
                     -moz-transition: all 0.5s linear;
                     transition: all 0.5s linear;
@@ -773,7 +735,6 @@ footer {
                     width: 100%;
                     margin: 2%;
                     padding: 5px;
-
                     &:hover {
                         -webkit-transform: scale3d(1.2, 1.2, 1);
                         -moz-transform: scale3d(1.2, 1.2, 1);
@@ -785,7 +746,9 @@ footer {
     }
 }
 
+
 /*---------------Chat----------------------*/
+
 button.chat {
     position: fixed;
     bottom: 10px;
@@ -808,7 +771,6 @@ button.chat {
     -o-transition-timing-function: ease-in;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-
     &:hover {
         -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
         -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
@@ -841,26 +803,20 @@ button.chat {
     -o-transition-timing-function: ease-in;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-
     header {
         background-color: mediumseagreen;
     }
-
     .title {
         background-color: mediumseagreen;
-
         div {
             &[attr^=col-lg] {
                 padding: 0px;
             }
-
             &.col-lg-3 {
                 position: relative;
-
                 button {
                     height: 15px;
                     width: 15px;
-
                     &.closing {
                         background: url("../images/cancel.png");
                         background-repeat: no-repeat;
@@ -874,25 +830,20 @@ button.chat {
             }
         }
     }
-
     .off-message small {
         font-size: 12px;
-
         &:first-child {
             color: #999;
         }
-
         &:last-child {
             color: #333;
         }
     }
-
     .form-fill {
         label {
             color: #888;
             font-size: 12px;
         }
-
         button {
             background-color: mediumseagreen;
         }
@@ -919,16 +870,13 @@ button.chat {
     -o-transition-timing-function: ease-in;
     -webkit-transition-timing-function: ease-in;
     transition-timing-function: ease-in;
-
     .live-Chat-body {
         height: 300px;
     }
-
     .live-Chat-title {
         background-color: mediumseagreen;
         color: #fff;
         padding: 5px 0;
-
         .pull-right {
             img {
                 width: 20px;
@@ -936,22 +884,18 @@ button.chat {
             }
         }
     }
-
     .live-Chat-header {
         margin: 4px 0px;
         border-bottom: 1px solid #f2dede;
         padding-bottom: 4px;
         color: #444;
-
         img {
             height: 30px;
             width: 30px;
         }
-
         small {
             padding-left: 1em;
         }
-
         div {
             &.col-lg-12 {
                 padding-left: 5px;

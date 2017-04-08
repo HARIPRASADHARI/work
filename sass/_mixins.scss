@@ -29,29 +29,29 @@ $breakpoints: (
   }
 }
 
-/*------------Example---------------*/
-.main {
-  /*...*/
-  @include mq(small) {
-    /*...*/
-  }
-  @include mq(landscape) {
-    /*...*/
-  }
-  @include mq(retina) {
-    /*...*/
-  }
-}
-@include mq(landscape) {
-  @include mq(medium) {
-    .main {
-      /*...*/
-    }
-  }
-}
-@media screen and (min-width: map-get($breakpoints, exsmall)) 
-and (max-width: map-get($breakpoints, medium) - 1px) {
-  .main {
-    /*...*/
-  }
-}
+// /*------------Example---------------*/
+// .main {
+//   /*...*/
+//   @include mq(small) {
+//     /*...*/
+//   }
+//   @include mq(landscape) {
+//     /*...*/
+//   }
+//   @include mq(retina) {
+//     /*...*/
+//   }
+// }
+// @include mq(landscape) {
+//   @include mq(medium) {
+//     .main {
+//       /*...*/
+//     }
+//   }
+// }
+// @media screen and (min-width: map-get($breakpoints, exsmall)) 
+// and (max-width: map-get($breakpoints, medium) - 1px) {
+//   .main {
+//     /*...*/
+//   }
+// }
